@@ -18,8 +18,7 @@ jobs:
         run: |
           matrix=$(yaml2json build.yaml | jq -c .)
           yaml2json build.yaml
-          
-          echo "{matrix}={matrix}" >> $GITHUB_OUTPUT
+         echo "{matrix}={matrix}" >> $GITHUB_OUTPUT
  
   build:
     runs-on: ubuntu-latest
@@ -46,8 +45,7 @@ jobs:
           echo "{extra-cmake-args}={EXTRA_CMAKE_ARGS}" >> $GITHUB_OUTPUT
           echo "{artifact-name}={ARTIFACT_NAME}" >> $GITHUB_OUTPUT
           echo "{display-name}={DISPLAY_NAME}" >> $GITHUB_OUTPUT
-          echo "{zephyr-version}={ZEPHYR_VERSION}" >> $GITHUB_OUTPUT
-          
+
       - name: Checkout
         uses: actions/checkout@v2
       - name: Cache west modules
