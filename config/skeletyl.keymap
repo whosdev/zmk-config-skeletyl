@@ -24,7 +24,7 @@
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
-        hmp: homerow_mods {
+        hmp: homerow_mod {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_PINKY";
             #binding-cells = <2>;
