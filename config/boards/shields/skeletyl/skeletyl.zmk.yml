@@ -1,12 +1,14 @@
 file_format: "1"
-id: skeletyl
-name: Skeletyl
+id: corne
+name: Corne
 type: shield
-url: https://github.com/Bastardkb/Skeletyl
+url: https://github.com/foostan/crkbd/
 requires: [pro_micro]
 exposes: [i2c_oled]
 features:
   - keys
+  - display
+  - underglow
 siblings:
-  - skeletyl_left
-  - skeletyl_right
+  - corne_left
+  - corne_right
